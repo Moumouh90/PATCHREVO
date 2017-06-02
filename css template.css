@@ -1,0 +1,167 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video{margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent}
+body{line-height:1}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display:block}
+nav ul{list-style:none}
+blockquote, q{quotes:none}
+blockquote:before, blockquote:after, q:before, q:after{content:''; content:none}
+a{margin:0; padding:0; font-size:89%; vertical-align:baseline; background:transparent}
+del{text-decoration:line-through}
+abbr[title], dfn[title]{cursor:help}
+table{border-collapse:collapse; border-spacing:0}
+hr{display:block; height:1px; border:0}
+input, select{vertical-align:middle}
+.navbar{height:0px; overflow:hidden; display:none}
+#navbar-iframe{height:0; visibility:hidden; display:none}
+body{background-image:url(http://i.imgur.com/rV1VpvN.jpg);  background-repeat:no-repeat;  background-attachment:fixed;  background-position:center}
+a:link{color:$linkcolor; text-decoration:none}
+a:visited{color:$visitedlinkcolor; text-decoration:none}
+h1, h2, h3, h4, h5, h6{color:$titlecolor; text-decoration:none}
+h2{line-height:1.4em; color:$sidebarcolor}
+#cabecera{width:990px; height:200px; position:relative; top:0; z-index:11; left:0; margin:1px auto 0; padding:0 0 7px; border-bottom:3px solid #f3f3f3}
+#header{float:left; background:none; text-align:left; color:$pagetitlecolor; width:450px; height:69px; margin:0; padding:0}
+#menu_conte{float:right; width:490px; height:auto; position:relative; margin:0 10px 0 0; padding:0}
+#header h1{position:relative; top:17px; left:0; font:$pagetitlefont; color:$pagetitlecolor; display:block; line-height:1.2em; max-width:450px; text-align:left; text-transform:uppercase; text-shadow:1px 1px 0 #1e0019,2px 2px 0 #380B61; margin:0; padding:0}
+#header .description{position:relative; top:12px; left:10px; text-transform:none; letter-spacing:.2em; line-height:1.4em; font:$descriptionfont; color:$descriptioncolor; max-width:450px; display:none; padding:5px 0 15px 17px}
+#header img{margin-left:auto; margin-right:auto}
+a img{border-width:0}
+#crosscol-wrapper{ width:990px;  height:162px;  border-bottom:3px solid #f4f4f4;  margin:0 auto;  padding:7px 0 0}
+
+#menuBuscador{position:relative; width:95%; height:40px; padding-left:14px; background:#FFF}
+.menusearch{padding:0; margin:0; list-style:none; position:relative; z-index:5; font-family:"Lucida Sans Unicode","Trebuchet Unicode MS","Lucida Grande",sans-serif}
+.menusearch li:hover li a{background:none}
+.menusearch li.top{display:block; float:left}
+.menusearch li a.top_link{display:block; float:left; height:40px; line-height:40px; color:#000; text-decoration:none; font-size:14px; padding:0 0 0 12px; cursor:pointer}
+.menusearch li a.top_link span{float:left; display:block; padding:0 24px 0 12px; height:40px}
+.menusearch li a.top_link span.down{float:left; display:block; padding:0 24px 0 12px; height:40px}
+.menusearch li a.top_link:hover, .menusearch li:hover >a.top_link{color:#000}
+.menusearch li:hover{position:relative; z-index:2}
+.menusearch ul, 
+.menusearch li:hover ul ul, 
+.menusearch li:hover ul li:hover ul ul, 
+.menusearch li:hover ul li:hover ul li:hover ul ul, 
+.menusearch li:hover ul li:hover ul li:hover ul li:hover ul ul{position:absolute; left:-9999px; top:-9999px; width:0; height:0; margin:0; padding:0; list-style:none}
+
+.menusearch li:hover ul.sub{left:0; top:40px; background:#333; padding:3px; white-space:nowrap; width:200px; height:auto; z-index:3}
+.menusearch li:hover ul.sub li{display:block; height:30px; position:relative; float:left; width:200px; font-weight:normal}
+.menusearch li:hover ul.sub li a{display:block; height:30px; width:200px; line-height:30px; text-indent:5px; color:#fff; font-size:14px; text-decoration:none}
+.menusearch li ul.sub li a.fly{background:#333 url(https://lh4.googleusercontent.com/_dsEG33PDaHw/TZ0rcSPpqlI/AAAAAAAABSc/RseHiYluzAM/arrow_over.gif) 185px 10px no-repeat}
+.menusearch li:hover ul.sub li a:hover{background:#FFC000; color:#fff}
+.menusearch li:hover ul.sub li a.fly:hover, .menusearch li:hover ul li:hover >a.fly{background:#FFC000 url(https://lh4.googleusercontent.com/_dsEG33PDaHw/TZ0rcSPpqlI/AAAAAAAABSc/RseHiYluzAM/arrow_over.gif) 185px 10px no-repeat; color:#fff}
+
+.menusearch li:hover ul li:hover ul, 
+.menusearch li:hover ul li:hover ul li:hover ul, 
+.menusearch li:hover ul li:hover ul li:hover ul li:hover ul, 
+.menusearch li:hover ul li:hover ul li:hover ul li:hover ul li:hover ul{left:200px; top:-4px; background:#333; padding:3px; white-space:nowrap; width:200px; z-index:4; height:auto}
+#search input[type="text"]{background:#fff url(//lh4.googleusercontent.com/-1jhhmuhclMc/U8_hntfKzCI/AAAAAAAAFi8/hqlTRAByrVM/s32/buscar.png) no-repeat center left; position:absolute; right:3px; outline:none; font-size:13px; color:#ccc; width:0; margin:0; padding:12px 0 12px 35px; z-index:1000; border:1px solid #fff; -webkit-transition:all 0.5s ease-in-out; -moz-transition:all 0.5s ease-in-out; -o-transition:all 0.5s ease-in-out; -ms-transition:all 0.5s ease-in-out; transition:all 0.5s ease-in-out}
+#search input[type="text"]:hover, #search input[type="text"]:focus{width:94%}
+
+.clear{clear:both}
+.author-profile:before{background:$conteBorderColor}
+#outer-wrapper{position:relative; width:100%; font-family:'Open Sans',sans-serif; font-weight:300; margin:0 auto; padding:0}
+#content-wrapper{width:990px; text-align:left; position:relative; border-top:none; clear:both; margin:0 auto; padding:0}
+#main{width:741px; float:left; overflow:hidden; display:inline}
+#main, #sidebar-wrapper{margin:1px 0 0; padding:6px 0 0}
+#end2{border-top:3px solid #f3f3f3; position:relative; top:0; left:0; width:990px; height:38px; clear:both; margin:0 auto}
+#sidebar-wrapper{width:249px; float:right; line-height:1.2em; overflow:hidden; display:inline}
+#PageList1{width:670px; height:50px; position:absolute; top:0px; left:auto; margin:15px auto 0}
+#PageList1 ul{list-style:none; margin:0}
+#PageList1 li{float:left; margin:0 10px 0 0; padding:0}
+#PageList1 li a{display:inline-block; text-align:center; text-decoration:none; white-space:nowrap; font:$menuTextFont; color:$menuTextColor; margin:0; padding:4px 4px 2px; text-transform:uppercase}
+#PageList1 li a:hover{text-decoration:underline; cursor:pointer}
+#PageList1 li.selected{font-weight:700}
+#top{width:990px; height:50px; text-align:left; overflow:visible; clear:both; margin:0 auto}
+
+#nav{    list-style:none;     width:551px;     float:left;     position:initial;     top:57px;     right:0;     margin:7px 0 0 81px;     padding:-16px 99px 93px 258px}
+#nav li{float:left; margin:0 10px 0 0; position:relative; top:0}
+#nav a{padding:4px 7px 5px; font:$menuTextFont; color:$menuTextColor; text-decoration:none; text-transform:uppercase; border-top:2px solid  $bgColor}
+#nav a, input.gsc-input{color:$menuTextColor}
+#nav a:hover{background:$menubgColor; color:$titlecolor}
+#nav ul{background:transparent url(data:image/png; base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVQIW2NkAAIAAAoAAggA9GkAAAAASUVORK5CYII=); *background-color:$menuliabgColor; list-style:none; position:absolute; left:-9999px; padding:0; margin:0}
+#nav ul li{padding:3px 0 0 0; margin:5px 0 0 0; float:none}
+#nav ul a{white-space:nowrap}
+#nav li:hover ul{left:0}
+#nav li:hover a{background:$menuliabgColor; border-top:2px solid $menuliabgColor}
+#nav li:hover ul a{text-decoration:none}
+#nav li ul li a{color:$TextHoverColor}
+
+#nav li:hover ul li a:hover{border-top:2px solid $menuulbgColor}
+#nav li:hover a.inicial{background:transparent}
+#nav ul li a.inicial:hover{background:$bgColor}
+
+.post h2{line-height:19px; text-transform:uppercase; margin:0}
+.post h2 a, .post h2 a:visited, .post h2 strong{text-decoration:none; color:#000; font-weight:300}
+.post h2 a:hover{color:#6c0ba9}
+.post-body{line-height:1.5em; margin:0 0 .75em}
+.post-body ul li{list-style-type:square}
+.post-footer{border-top:1px solid $PostfooterBorderColor; border-bottom:1px solid $PostfooterBorderColor; margin:0; padding:5px 1px}
+.post-footer, .comments .comments-content .comment{border-bottom:1px solid $PostfooterBorderColor!important}
+.tr-caption-container img{border:none; padding:0}
+.post blockquote{border-left:4px solid $PostfooterBorderColor; margin:1em 15px; padding:8px 5px}
+.post blockquote:hover{background-color:$postbgColor}
+.post blockquote p{margin:.75em 0}
+#blog-pager-newer-link{float:right; margin-right:20px}
+#blog-pager-older-link{float:left; margin-left:20px}
+#blog-pager{text-align:center; height:45px; line-height:250%; font-size:120%; text-transform:uppercase; clear:both; margin:10px; padding:0}
+.feed-links{clear:both; line-height:2.5em; display:none}
+.sidebar{color:$sidebartextcolor; word-wrap:break-word; overflow:hidden; line-height:1.2em; margin:0; padding:0 5px 0 0}
+.sidebar ul li{padding-left:6px; line-height:100%}
+.sidebar h2{    background-color:darkgrey;     color:black;     text-align:center;     margin:0px 8px 4px 5px; :300}
+main .widget{font-weight:700; padding:4px}
+.sidebar .widget{width:249px; background:$postbgColor; margin:0 0 7px; padding:5px 3px 8px}
+#Label3{width:100%; padding-right:7px}
+#pie{width:990px; margin:0 auto; padding:0; border-top:3px solid #f3f3f3}
+#columnaf1, #columnaf2, #columnaf3, #columnaf4{background:none; position:relative; top:7px; text-align:left; font-size:120%; overflow:hidden; border:none; float:left; margin:0; padding:0}
+.columna1 ul li, .columna2 ul li, .columna3, .columna4 ul li{list-style-type:circle; color:#589aac; line-height:120%}
+#columnaf1{left:0; width:230px; padding:0 10px 5px 0}
+#columnaf2{left:10px; width:230px; padding:0 18px}
+#columnaf3{left:10px; width:230px; padding:0 5px 15px}
+#columnaf4{left:20px; width:230px}
+.columna1 .widget, .columna2 .widget, .columna3 .widget{margin:0 0 10px; margin-bottom:25px}
+.columna1 h2, .columna2 h2, .columna3 h2, .columna4 h2{color:$sidebarcolor; text-align:left; letter-spacing:.1em; line-height:120%; text-transform:uppercase; margin:0; padding:0 0 8px}
+a.credito:hover{text-decoration:underline}
+.CSS_LIGTBOX_BG_MASK{filter:alpha(opacity=90)}
+ul#m-soc2{   float:left;     width:95%;     height:30px;     right:0;     left:52px;     position:relative;     top:0px;     margin:0;     padding:0}
+ul#m-soc2 li{list-style:none; float:left; border:none; margin:1px; padding:0}
+ul#m-soc2 li a{background:url(http://1.bp.blogspot.com/-4-JxYHBf4Wc/T4kC622jN5I/AAAAAAAAJo8/mZcIXK3lhOI/s1600/sprite-fashionista.png) no-repeat 0 0; display:block; position:relative; width:36px; height:36px; overflow:hidden; margin:0; padding:0}
+ul#m-soc2 li a.twitter{background-position:0 0}
+ul#m-soc2 li a.facebook{background-position:-40px 0}
+ul#m-soc2 li a.google{background-position:-80px 0}
+ul#m-soc2 li a.pinterest{background-position:-120px 0}
+ul#m-soc2 li a.rss{background-position:-160px 0}
+ul#m-soc2 li a.twitter:hover{background-position:0 -40px}
+ul#m-soc2 li a.facebook:hover{background-position:-40px -40px}
+ul#m-soc2 li a.google:hover{background-position:-80px -40px}
+ul#m-soc2 li a.pinterest:hover{background-position:-120px -40px}
+ul#m-soc2 li a.rss:hover{background-position:-160px -40px}
+.infiniteCarousel ul li{border-right:3px solid $bgColor}
+.infiniteCarousel .arrow{background:$postbgColor url(http://1.bp.blogspot.com/-4-JxYHBf4Wc/T4kC622jN5I/AAAAAAAAJo8/mZcIXK3lhOI/s1600/sprite-fashionista.png) no-repeat 0 0; display:block; height:156px; width:25px; text-indent:-999px; position:absolute; top:-1px; cursor:pointer; opacity:.7; filter:alpha(opacity=70)}
+.infiniteCarousel .forward{background-position:-240px 58px; right:0}
+.infiniteCarousel .back{background-position:-202px 58px; left:0}
+.infiniteCarousel .forward:hover, .infiniteCarousel .back:hover{opacity:.9; filter:alpha(opacity=90)}
+.status-msg-wrap{display:block; height:40px; color:#a1b3c3; width:734px; margin:0 0 4px -2px}
+textarea{overflow:auto}
+input.gsc-input{height:24px; width:204px!important; line-height:23px; margin-left:5px; padding-left:25px!important; border:1px solid $PostfooterBorderColor!important; background:url(//2.bp.blogspot.com/-Co_Jd3mSEk0/T4ioa85iWmI/AAAAAAAAJnk/uTdw2p00gwY/s1600/buscar.png) no-repeat center left!important}
+.gsc-above-wrapper-area{border:0}
+#Label1 ul{width:255px; position:relative; left:-8px; margin:0; padding:0}
+#Label1 ul li a{display:block; margin:2px 0; padding:8px 4px 8px 7px}
+.post-labels a{background-color:$postbgColor; ; padding:2px 4px; color:#22adda}
+.post-labels a:hover{background-color:$conteBorderColor}
+.comments .avatar-image-container{border:2px solid $PostfooterBorderColor}
+.archivop{position:relative; left:0; top:0; display:inline}
+a.tooltip span{float:left; margin-left:2px; background:#fff; border:1px solid #ccc; color:#606060; font-size:12px; line-height:120%; box-shadow:1px 1px 5px #888; border-radius:2px; opacity:0; filter:alpha(opacity=0); position:absolute; width:250px; top:-70px; display:none\9; -webkit-transform:scale(0); -moz-transform:scale(0); -o-transform:scale(0); transform:scale(0); -moz-transform-origin:10% 50%; -webkit-transform-origin:10% 50%; -o-transform-origin:10% 50%; transform-origin:l0% 50%; z-index:20; padding:2px}
+a.tooltip:hover span{display:inline; position:absolute; opacity:1; filter:alpha(opacity=100); -webkit-transition:all .25s ease; -moz-transition:all .25s ease; -o-transition:all .25s ease; transition:all .25s ease; -webkit-transform:scale(1); -moz-transform:scale(1); -o-transform:scale(1); transform:scale(1)}
+h2.title_a{display:inline; font-weight:400}
+a:hover, #header h1:hover{color:$hovercolor}
+#PageList1 h2, h2.date-header, input.gsc-search-button{display:none}
+.post-outer, .infiniteCarousel ul li a span, .comments .comments-content .inline-thread{background:$postbgColor}
+#Label1 ul li a:hover, #Label1 a.seleccionado{background:$conteBorderColor; border-right:6px solid $menuulbgColor}
+.infiniteCarousel ul li a span{color:$textcolor#comments h4{ display:block;  width:100%;  border-bottom:3px solid #f3f3f3}
+#galeria{ width:100%;  margin:10px 5px;  padding:0}
+ #galeria li{ margin:0 10px 10px 0;  padding:0;  float:left;  list-style:none}
+ #galeria a{ width:200px;  height:160px;  display:block;  position:relative;  top:0;  left:0;  margin:0;  padding:0;  font-size:14px;  color:#fff;  text-align:center;  white-space:nowrap}
+ #galeria li img{ width:200px;  height:160px;  margin:0;  padding:0;  border:none}
+ #galeria span{ width:200px;  left:0;  bottom:0;  margin:0;  padding:4px 0;  background:#0A1B2A;  opacity:.7;  filter:alpha(opacity=70);  cursor:pointer;  position:absolute;  overflow:hidden;  z-index:10}
+ .zoom{ z-index:9;  -webkit-transition:all .25s ease-out;  -moz-transition:all .25s ease-out;  transition: all .25s ease-out}
+.sec_zoom{ z-index:9;  overflow:hidden}
+.zoom:hover{ -moz-transform:scale(2);  -webkit-transform:scale(2);  transform: scale(2)}
+
